@@ -1,0 +1,113 @@
+/*We want to import them in the following order to maintain good scope and avoid conflicts during compilation*/
+/*
+@import 'abstracts/variables';
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
+
+@import 'base/normalize';
+
+@import 'layout/navigation';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/sidebar';
+@import 'layout/forms';
+
+@import 'components/buttons';
+@import 'components/hero';
+@import 'components/pull-quote';
+
+@import 'pages/home';
+@import 'pages/contact';
+
+*/
+
+@import 'font';
+@import "colors";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  @include regular(1);
+
+}
+
+h1 {
+  @include demi-bold(1.5);
+}
+h2 {
+  @include demi-bold(1.25);
+
+}
+h3 {
+  @include demi-bold(1.15);
+
+}
+h4 {
+  @include demi-bold(1.1);
+
+}
+h5 {
+  @include demi-bold(1);
+}
+
+p {
+  @include regular(1);
+  line-height: 1.4rem;
+}
+
+article a:link,
+article a:visited {
+
+}
+
+
+/*DIVI theme OVERride*/
+.et_pb_section {
+  padding: 0 !important;
+}
+
+ol {
+  li {
+    list-style-position: outside !important;
+    margin: 0 0 0 18px !important;
+  }
+}
+
+.et_pb_with_border.et_pb_section {
+
+}
+
+.entry-content ul {
+
+}
+
+/* END DIVI theme OVERride*/
+
+/*** Responsive Styles Standard Desktop Only ***/
+@media all and (min-width: 1100px) {
+
+}
+
+/*** Responsive Styles Tablet And Below ***/
+@media all and (max-width: 980px) {
+
+}
+
+/*** Responsive Styles Tablet Only ***/
+@media all and (min-width: 768px) and (max-width: 980px) {
+
+}
+
+/*** Responsive Styles Smartphone Only ***/
+@media all and (max-width: 767px) {
+
+}
+
+/*** Responsive Styles Smartphone Portrait ***/
+@media all and (max-width: 479px) {
+
+}

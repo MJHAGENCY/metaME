@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+@mixin demi-bold($size) {
+  font-family: "Open Sans", sans-serif;
+  font-size: $size + rem !important;
+  font-weight: 600;
+}
+
+@mixin bold($size) {
+  font-family: "Open Sans", sans-serif;
+  font-size: $size + rem !important;
+  font-weight: 800;
+}
+
+@mixin italic($size) {
+  font-family: "Open Sans", sans-serif;
+  font-size: $size + rem !important;
+  font-style: italic;
+  font-weight: 400;
+}
+
+@mixin regular($size) {
+  font-family: "Open Sans", sans-serif;
+  font-size: $size + rem !important;
+  font-weight: 400;
+}
+

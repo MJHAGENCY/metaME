@@ -1,0 +1,12 @@
+# exclude node js modules
+themes/**/node_modules
+themes/**/node_modules/*
+# phpstorm
+.idea
+.idea/*
+# mac stuff
+.DS_Store
+# some Divi/elegant themes nonsense
+et-cache
+et-cache/*
+
